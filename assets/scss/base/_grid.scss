@@ -1,0 +1,7 @@
+.row {
+    max-width: 1200px;
+}
+
+[class*="column"]+[class*="column"]:last-child {
+    float: left;
+}

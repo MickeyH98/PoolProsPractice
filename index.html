@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pool Pros</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/styles.css">
+	</head>
+	<body>
+		<header class="header">
+            <div class="header__desktop-top-bar">
+                <div class="row">
+                    <div class="columns">
+                        <ul>
+                            <li><a href="#">Commercial Service</a></li>
+                            <li><a href="#">Dealers and Distributors</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__desktop-bottom-bar">
+                <div class="row">
+                    <div class="columns">
+                        <a href="#"><img class="header__logo" src="assets/img/pool-pros-logo.png" alt="Pool Pros Logo"></a>
+                        <a class="header__link button button__primary" href="#"><img src="assets/img/location-icon.png" alt="Pin"> Find a <span>Pool </span>Pro</a>
+                        <ul class="header__desktop-nav">
+                            <li><a href="#">Pools &amp; Spas</a></li>
+                            <li><a href="#">Supplies</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                        <img class="header__mobile-menu" src="assets/img/menu-icon-mobile.png" alt="Hamburger Icon">
+                    </div>
+                </div>
+            </div>
+        </header> <!-- .header -->
+
+        <section class="section section__filter">
+            <div class="section__bg"></div>
+            <div class="row section__desktop-only">
+                <div class="columns section__desktop-only">
+                    <div class="filters">
+                        <div class="row filters__row">
+                            <div class="columns">
+                                <p class="filters__zip">7 dealers in 28226</p>
+                                <div class="filters__toggle">
+                                    <h2 class="filters__title">Filter Results</h2>
+                                    <img class="filters__arrow" src="assets/img/downarrow.svg" alt="Open Dropdown">
+                                </div>
+                                <div class="filters__container">
+                                    <div class="filters__filter">
+                                        <input class="filter__input" id="filter-service" type="checkbox" name="filter-service" onclick="checkboxToggled('Service Pro');">
+                                        <label for="filter-service">Service</label>
+                                    </div>
+                                    
+                                    <div class="filters__filter">
+                                        <input class="filter__input" id="filter-installation" type="checkbox" name="filter-installation" onclick="checkboxToggled('Installation Pro');">
+                                        <label for="filter-installation">Installation</label>
+                                    </div>
+                                    
+                                    <div class="filters__filter">
+                                        <input class="filter__input" id="filter-residential" type="checkbox" name="filter-residential" onclick="checkboxToggled('Residential Pro');">
+                                        <label for="filter-residential">Residential</label>
+                                    </div>
+                                    
+                                    <div class="filters__filter">
+                                        <input class="filter__input" id="filter-commercial" type="checkbox" name="filter-commercial" onclick="checkboxToggled('Commercial Pro');">
+                                        <label for="filter-commercial">Commercial</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- .filters -->
+                </div>
+            </div>
+        </section> <!-- .section .section__filter -->
+
+        <div class="row">
+            <div class="columns">
+                <section class="section section__cards">
+                    
+                </section> <!-- .section .section__cards -->
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="columns">
+                        <img class="footer__logo" src="assets/img/pool-pros-logo-footer.png" alt="Pool Pros Logo">
+                        <p class="footer__connect">Connect With Us</p>
+                        <img class="footer__icon" src="assets/img/youtube-icon.png" alt="Youtube Icon">
+                        <img class="footer__icon" src="assets/img/facebook-icon.png" alt="Facebook Icon">
+                        <img class="footer__icon" src="assets/img/twitter-icon.png" alt="Twitter Icon">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="columns">
+                        <a class="footer__links-top" href="#">Dealers and Distributors</a>
+                        <a class="footer__links-top" href="#">Commercial Service</a>
+                        <hr>
+                        <a class="footer__links-bottom" href="#">© 2017 Pool Pros</a>
+                        <a class="footer__links-bottom" href="#">Privacy Policy</a>
+                        <a class="footer__links-bottom" href="#">Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- .footer -->
+
+        <div class="mobile-menu">
+            <img class="mobile-menu__close" src="assets/img/closeX.svg" alt="Close">
+            <h2 class="mobile-menu__title">Menu</h2>
+            <ul class="mobile-menu__list">
+                <li>
+                    <p>Pools &amp; Spas</p>
+                    <a href="#">next</a>
+                </li>
+                <li>
+                    <p>Supplies</p>
+                    <a href="#">next</a>
+                </li>
+                <li>
+                    <p>Resources</p>
+                    <a href="#">next</a>
+                </li>
+                <li>
+                    <p>Services</p>
+                    <a href="#">next</a>
+                </li>
+            </ul>
+        </div> <!-- .mobile-menu -->
+
+        <div class="modal__wrapper">
+            <div class="modal">
+                <div class="modal__header">
+                    <img class="modal__close" src="assets/img/closeXwhite.svg" alt="Close Modal">
+                    <p class="modal__subtitle">Email</p>
+                    <h2 class="modal__title">Premium Pools &amp; Spas of Charlotte</h2>
+                </div>
+                <div class="modal__body">
+                    <p class="modal__instructions">Fill out the form below and Premium Pools &amp; Spas of Charlotte will get in touch.</p>
+                    <form class="modal__form" action="#" method="POST">
+                        <label class="modal__label modal__label-required" for="name">First and last name</label>
+                        <input class="modal__input modal__input-name" type="text" id="name" required>
+    
+                        <label class="modal__label modal__label-required modal__label-required-short" for="phone">Phone number</label>
+                        <input class="modal__input modal__input-phone" type="text" id="phone" required>
+    
+                        <label class="modal__label modal__label-required" for="email">Email address</label>
+                        <input class="modal__input modal__input-email" type="text" id="email" required>
+    
+                        <label class="modal__label modal__label-optional" for="comments">Comments or questions</label>
+                        <textarea class="modal__input modal__input-comments" name="comments" id="comments" cols="30" rows="3"></textarea>
+    
+                        <p class="modal__label modal__label-owner">Do you currently own a pool or spa?</p>
+                        <input class="modal__input modal__input-currentowneryes" type="radio" id="currentowneryes" value="yes" name="currentowner">
+                        <label class="modal__label modal__label-currentowneryes" for="currentowneryes">Yes</label>
+    
+                        <input class="modal__input modal__input-currentownerno" type="radio" id="currentownerno" value="no" name="currentowner">
+                        <label class="modal__label modal__label-currentownerno" for="currentownerno">No</label>
+                        
+                        <hr>
+                        <button class="modal__submit" type="submit">Send<span> my email <img src="assets/img/next-arrow.png" alt="Next"></span></button>
+                    </form>
+                </div>
+                <div class="modal__footer">
+                    <p class="modal__disclaimer">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+                </div>
+            </div> <!-- .modal -->
+        </div> <!-- .modal__wrapper -->
+        
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+		<script src="assets/js/project.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,117 @@
+.footer {
+
+    &__top {
+        background-color: #083D8C;
+        padding-top: 37px;
+        padding-bottom: 26px;
+
+        @media (min-width: 1024px) {
+            text-align: center;
+        }
+
+    }
+
+    &__logo {
+        width: 190px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 26px;
+    }
+
+    &__connect {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin: 0;
+        display: inline-block;
+        margin-left: 15px;
+
+        @media (min-width: 1024px) {
+            margin-right: 27px;
+        }
+
+    }
+
+    &__icon {
+        height: 20px;
+        float: right;
+        margin-right: 20px;
+
+        @media (min-width: 1024px) {
+            float: none;
+        }
+
+    }
+
+    &__bottom {
+        background-color: #216DDF;
+        text-align: center;
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 16px;
+        padding-bottom: 11px;
+
+        hr {
+            width: 328px;
+            color: white;
+            margin: 0 auto 14px auto;
+
+            @media (min-width: 1024px) {
+                display: none;
+            }
+
+        }
+
+    }
+
+    &__links-top {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 7px;
+        display: inline-block;
+        position: relative;
+
+        &:first-child {
+            margin-right: 22px;
+
+            &:after {
+                content: "|";
+                position: absolute;
+                top: 0;
+                right: -15px;
+            }
+
+        }
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+
+    }
+
+    &__links-bottom {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+
+        &:nth-last-child(2) {
+            margin: 0 22px;
+        }
+
+        &:not(:last-child) {
+            
+            &:after {
+                content: "|";
+                position: absolute;
+                top: 0;
+                right: -15px;
+            }
+
+        }
+
+    }
+
+}

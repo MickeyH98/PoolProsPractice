@@ -1,0 +1,51 @@
+.section {
+    float: left;
+    width: 100%;
+} //.section
+
+.section__filter {
+    position: relative;
+
+    .section {
+
+        &__bg {
+            background-image: url("../img/water-image.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 105px;
+
+
+            @media (min-width: 1024px) {
+                height: 129px;
+            }
+        }
+
+        &__desktop-only {
+
+            @media (max-width: 1024px) {
+                padding: 0;
+            }
+
+        }
+
+    }
+
+} //.section__filter
+
+.section__cards {
+    margin-bottom: 40px;
+
+    .section {
+
+        &__columns {
+            
+            @media (max-width: 1024px) {
+                padding: 0;
+            }
+
+        }
+
+    }
+
+} //.section__cards
