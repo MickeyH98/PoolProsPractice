@@ -1,31 +1,31 @@
 .filters {
     background-color: #F6F6F6;
-    width: 100%;
     float: left;
     padding: 20px 0;
+    width: 100%;
 
     &__zip {
         color: $blue;
-        font-size: 16px;
-        line-height: 50px;
         float: left;
+        font-size: 16px;
         font-weight: bold;
+        line-height: 50px;
         margin: 0;
 
         @media (min-width: 1024px) {
-            margin-right: 50px;
-            margin-left: 100px;
             font-size: 18px;
             line-height: 26px;
+            margin-left: 100px;
+            margin-right: 50px;
             position: relative;
 
             &:after {
+                border-left: solid 2px #ECECEC;
                 content: "";
+                height: 57px;
                 position: absolute;
                 right: -25px;
                 top: -15px;
-                height: 57px;
-                border-left: solid 2px #ECECEC;
             }
 
         }
@@ -33,52 +33,52 @@
     }
 
     &__toggle {
-        border-top: solid 1px #D8D8D8;
-        border-right: solid 1px #D8D8D8;
+        background-color: white;
         border-bottom: solid 1px #D8D8D8;
         border-left: solid 1px #D8D8D8;
-        background-color: white;
+        border-right: solid 1px #D8D8D8;
+        border-top: solid 1px #D8D8D8;
+        cursor: pointer;
         float: right;
-        width: 177px;
         height: 50px;
         position: relative;
-        cursor: pointer;
+        width: 177px;
 
         @media (min-width: 1024px) {
-            width: auto;
-            height: auto;
             background-color: inherit;
             border: none;
-            position: static;
-            float: left;
             cursor: default;
+            float: left;
+            height: auto;
+            position: static;
+            width: auto;
         }
 
     }
 
     &__title {
         color: #3F3F3F;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 20px;
-        padding: 18px 12px 12px 13px;
         float: left;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 20px;
         margin: 0;
+        padding: 18px 12px 12px 13px;
 
         @media (min-width: 1024px) {
-            padding: 0;
-            margin-right: 45px;
             font-size: 18px;
             line-height: 26px;
+            margin-right: 45px;
+            padding: 0;
         }
 
     }
 
     &__arrow {
+        background-color: #F6F6F6;
+        border-left: solid 1px #D8D8D8;
         float: left;
         padding: 22px 22px 21px 21px;
-        border-left: solid 1px #D8D8D8;
-        background-color: #F6F6F6;
 
         @media (min-width: 1024px) {
             display: none;
@@ -87,17 +87,17 @@
     }
 
     &__filter {
-        width: 100%;
         float: left;
         margin-bottom: 30px;
+        width: 100%;
 
         &:last-child {
             margin-bottom: 0;
         }
 
         @media (min-width: 1024px) {
-            width: auto;
             margin: 0;
+            width: auto;
         }
 
     }
@@ -105,19 +105,19 @@
 
 
     &__container {
-        display: none;
         background-color: white;
-        float: left;
-        padding-top: 22px;
-        padding-bottom: 22px;
         border: solid 1px #D8D8D8;
+        display: none;
+        float: left;
+        padding-bottom: 22px;
+        padding-top: 22px;
 
         label {
-            float: left;
-            margin-left: 60px;
             color: #3F3F3F;
-            font-size: 16px;
             cursor: pointer;
+            float: left;
+            font-size: 16px;
+            margin-left: 60px;
 
             @media (min-width: 1024px) {
                 font-size: 12px;
@@ -128,33 +128,33 @@
         }
 
         input {
+            -webkit-appearance: none;
             float: left;
             margin-left: 23px;
             position: relative;
-            -webkit-appearance: none;
 
             &:before {
-                content: "";
-                width: 26px;
-                height: 26px;
-                border-radius: 25%;
                 background-color: white;
+                border-radius: 25%;
                 border: solid 1px #D8D8D8;
+                content: "";
+                cursor: pointer;
+                height: 26px;
+                left: 0;
                 position: absolute;
                 top: 0;
-                left: 0;
-                cursor: pointer;
+                width: 26px;
             }
 
             &:after {
+                background-color: white;
                 content: "";
-                width: 10px;
+                cursor: pointer;
                 height: 10px;
                 left: 8px;
-                top: 8px;
                 position: absolute;
-                background-color: white;
-                cursor: pointer;
+                top: 8px;
+                width: 10px;
             }
 
         }
@@ -177,8 +177,8 @@
         @media (min-width: 1024px) {
             background-color: inherit;
             border: none;
-            padding: 0;
             display: block;
+            padding: 0;
         }
 
     }

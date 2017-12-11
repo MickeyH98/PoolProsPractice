@@ -1,35 +1,36 @@
 .modal {
-    width: 90%;
+    float: left;
+    left: 0;
     margin-left: 5%;
-    z-index: 5;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
     position: absolute;
     top: 50px;
-    left: 0;
-    overflow-y: auto;
-    max-height: calc(100vh - 80px);
-    float: left;
+    width: 90%;
+    z-index: 5;
     
     &__header {
-        padding-top: 25px;
-        padding-bottom: 36px;
         background-color: #083D8C;
         color: white;
+        float: left;
+        padding-bottom: 36px;
         padding-left: 17px;
         padding-right: 36px;
-        float: left;
+        padding-top: 25px;
         width: 100%;
 
         @media (min-width: 1024px) {
             padding-left: 34px;
             padding-right: 31px;
         }
+        
     }
 
     &__close {
-        position: absolute;
-        top: 0px;
-        right: 0px;
         padding: 20px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
         transition: 250ms;
 
         &:hover {
@@ -43,25 +44,25 @@
     }
 
     &__subtitle {
-        font-weight: bold;
         font-size: 14px;
+        font-weight: bold;
         line-height: 19px;
-        text-transform: uppercase;
         margin-bottom: 6px;
         margin-top: 0;
+        text-transform: uppercase;
     }
 
     &__title {
         font-size: 28px;
-        line-height: 38px;
         font-weight: bold;
+        line-height: 38px;
         margin: 0;
     }
 
     &__body {
-        padding: 29px 12px 20px 17px;
         background-color: white;
         float: left;
+        padding: 29px 12px 20px 17px;
         width: 100%;
 
         @media (min-width: 1024px) {
@@ -94,28 +95,28 @@
 
     &__label {
         color: #616161;
-        font-size: 14px;
-        line-height: 19px;
-        font-weight: bold;
-        margin-bottom: 6px;
         display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 19px;
+        margin-bottom: 6px;
 
         &-owner {
             display: block;
             margin-bottom: 21px;
 
             @media (min-width: 1024px) {
-                position: relative;
                 margin-bottom: 9px;
+                position: relative;
 
                 &:after {
-                    content: "optional";
                     color: #BEBEBE;
-                    position: absolute;
+                    content: "optional";
                     font-style: italic;
                     font-weight: 100;
-                    top: 0px;
                     left: 540px;
+                    position: absolute;
+                    top: 0px;
                 }
 
             }
@@ -125,14 +126,14 @@
         &-currentowneryes,
         &-currentownerno {
             float: left;
+            font-weight: 100;
             margin: 0 10px 29px 25px;
             padding-top: 3px;
-            font-weight: 100;
 
             @media (min-width: 1024px) {
+                left: -20px;
                 position: relative;
                 top: 2px;
-                left: -20px;
             }
 
         }
@@ -141,15 +142,15 @@
             position: relative;
 
             &:after {
-                content: "";
-                width: 22px;
-                height: 22px;
-                position: absolute;
-                left: 278px;
-                top: -2px;
                 background-color: inherit;
                 border-radius: 100%;
                 border: solid 1px #D8D8D8;
+                content: "";
+                height: 22px;
+                left: 278px;
+                position: absolute;
+                top: -2px;
+                width: 22px;
 
                 @media (min-width: 1024px) {
                     left: 570px;
@@ -176,13 +177,13 @@
             position: relative;
 
             &:after {
-                content: "optional";
                 color: #BEBEBE;
-                position: absolute;
+                content: "optional";
                 font-style: italic;
                 font-weight: 100;
-                top: 0px;
                 left: 240px;
+                position: absolute;
+                top: 0px;
 
                 @media (min-width: 1024px) {
                     left: 540px;
@@ -195,10 +196,10 @@
     }
 
     &__input {
-        display: block;
         border: solid 1px #D8D8D8;
-        padding: 10px 15px;
+        display: block;
         margin-bottom: 18px;
+        padding: 10px 15px;
 
         &-name {
             width: 300px;
@@ -237,35 +238,35 @@
 
         &-currentowneryes,
         &-currentownerno {
+            -webkit-appearance: none;
+            border: none;
             float: left;
             margin-right: 5px;
             position: relative;
-            -webkit-appearance: none;
-            border: none;
 
             &:before {
-                content: "";
-                width: 20px;
-                height: 20px;
-                border-radius: 25%;
                 background-color: #D8D8D8;
+                border-radius: 25%;
                 border: solid 1px black;
+                content: "";
+                cursor: pointer;
+                height: 20px;
+                left: 0;
                 position: absolute;
                 top: 0;
-                left: 0;
-                cursor: pointer;
+                width: 20px;
             }
 
             &:after {
-                content: "";
-                width: 8px;
-                height: 8px;
-                left: 6px;
-                top: 6px;
-                position: absolute;
                 background-color: white;
+                content: "";
                 cursor: pointer;
                 display: none;
+                height: 8px;
+                left: 6px;
+                position: absolute;
+                top: 6px;
+                width: 8px;
             }
 
             &:checked {
@@ -308,10 +309,10 @@
             @media (min-width: 1024px) {
 
                 &:before {
+                    background-color: inherit;
+                    border-radius: 4px;
                     height: 30px;
                     width: 60px;
-                    border-radius: 4px;
-                    background-color: inherit;
                 }
 
             }
@@ -326,29 +327,29 @@
 
     hr {
         display: block;
-        width: 300px;
         margin-bottom: 29px;
+        width: 300px;
 
         @media (min-width: 1024px) {
-            width: 595px;
             margin-bottom: 40px;
+            width: 595px;
         }
 
     }
 
     &__submit {
-        float: right;
         color: #0BC9C8;
+        float: right;
         font-size: 16px;
         line-height: 22px;
         margin-right: 10px;
 
         img {
-            width: 12px;
             height: 14px;
+            left: 5px;
             position: relative;
             top: -5px;
-            left: 5px;
+            width: 12px;
         }
 
         @media (max-width: 1024px) {
@@ -360,32 +361,32 @@
         }
 
         @media (min-width: 1024px) {
-            float: none;
-            margin: 0 auto;
-            display: block;
+            background-color: inherit;
             border: none;
             color: black;
+            display: block;
+            float: none;
             font-weight: bold;
-            background-color: inherit;
+            margin: 0 auto;
         }
 
     }
 
     &__wrapper {
-        width: 100vw;
-        height: 100vh;
         background-color: rgba(0, 0, 0, .5);
+        display: none;
+        height: 100vh;
+        left: 0;
         position: fixed;
         top: 0;
-        left: 0;
+        width: 100vw;
         z-index: 4;
-        display: none;
     }
 
     &__footer {
         background-color: #F6F6F6;
-        padding: 20px 34px;
         float: left;
+        padding: 20px 34px;
         width: 100%;
 
         @media (max-width: 1024px) {
@@ -395,17 +396,17 @@
     }
 
     &__disclaimer {
-        margin: 0;
         color: #616161;
         font-size: 12.5px;
         line-height: 20px;
+        margin: 0;
     }
 
     @media (min-width: 1024px) {
-        width: 703px;
         left: 50%;
-        transform: translateX(-50%);
         margin: 0;
+        transform: translateX(-50%);
+        width: 703px;
     }
 
 }

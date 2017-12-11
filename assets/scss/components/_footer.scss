@@ -2,8 +2,8 @@
 
     &__top {
         background-color: #083D8C;
-        padding-top: 37px;
         padding-bottom: 26px;
+        padding-top: 37px;
 
         @media (min-width: 1024px) {
             text-align: center;
@@ -12,21 +12,21 @@
     }
 
     &__logo {
-        width: 190px;
-        margin: 0 auto;
         display: block;
         margin-bottom: 26px;
+        margin: 0 auto;
+        width: 190px;
     }
 
     &__connect {
         color: white;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 20px;
-        text-transform: uppercase;
-        margin: 0;
         display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 20px;
         margin-left: 15px;
+        margin: 0;
+        text-transform: uppercase;
 
         @media (min-width: 1024px) {
             margin-right: 27px;
@@ -35,8 +35,8 @@
     }
 
     &__icon {
-        height: 20px;
         float: right;
+        height: 20px;
         margin-right: 20px;
 
         @media (min-width: 1024px) {
@@ -47,16 +47,16 @@
 
     &__bottom {
         background-color: #216DDF;
-        text-align: center;
         font-size: 12px;
         line-height: 17px;
-        padding-top: 16px;
         padding-bottom: 11px;
+        padding-top: 16px;
+        text-align: center;
 
         hr {
-            width: 328px;
             color: white;
             margin: 0 auto 14px auto;
+            width: 328px;
 
             @media (min-width: 1024px) {
                 display: none;
@@ -68,10 +68,10 @@
 
     &__links-top {
         color: white;
-        text-decoration: none;
-        margin-bottom: 7px;
         display: inline-block;
+        margin-bottom: 7px;
         position: relative;
+        text-decoration: none;
 
         &:first-child {
             margin-right: 22px;
@@ -79,8 +79,8 @@
             &:after {
                 content: "|";
                 position: absolute;
-                top: 0;
                 right: -15px;
+                top: 0;
             }
 
         }
@@ -93,9 +93,9 @@
 
     &__links-bottom {
         color: white;
-        text-decoration: none;
         display: inline-block;
         position: relative;
+        text-decoration: none;
 
         &:nth-last-child(2) {
             margin: 0 22px;
@@ -106,8 +106,8 @@
             &:after {
                 content: "|";
                 position: absolute;
-                top: 0;
                 right: -15px;
+                top: 0;
             }
 
         }
